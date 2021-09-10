@@ -1,8 +1,8 @@
-goed = input("Is the kaas geel?(y/n) ")
+goed = input("Is the kaas geel?(y/n) ").lower()
 if goed == "y":
-    gaten = input("Zitten er gaten in?(y/n) ")
+    gaten = input("Zitten er gaten in?(y/n) ").lower()
     if gaten == "y":
-        duur = input("Is de kaas belachelijk duur?(y/n) ")
+        duur = input("Is de kaas belachelijk duur?(y/n) ").lower()
         if duur == "y":
             print("Jouw kaas is Emmenthaler")
             exit()
@@ -10,7 +10,7 @@ if goed == "y":
             print("Jouw kaas is Leerdammer")
             exit()
     elif gaten == "n":
-        steen = input("Is de kaas hard als steen?(y/n) ")
+        steen = input("Is de kaas hard als steen?(y/n) ").lower()
         if steen == "y":
             print("Jouw kaas is Pamnigiano reggiano")
             exit()
@@ -18,9 +18,9 @@ if goed == "y":
             print("Jouw kaas is Goudse kaas")
             exit()
 elif goed == "n":
-    schimmel = input("Heeft de kaas blauwe schimmels?(y/n) ")
+    schimmel = input("Heeft de kaas blauwe schimmels?(y/n) ").lower()
     if schimmel == "y":
-        korst = input("Heeft de kaas een korst?(y/n) ")
+        korst = input("Heeft de kaas een korst?(y/n) ").lower()
         if korst == "y":
             print("Jouw kaas is Bleu de Rochbaron")
             exit()
@@ -28,7 +28,7 @@ elif goed == "n":
             print("Jouw kaas is Foume d'Ambert")
             exit()
     elif schimmel == "n":
-        korst = input("Heeft de kaas een korst?(y/n) ")
+        korst = input("Heeft de kaas een korst?(y/n) ").lower()
         if korst == "y":
             print("Jouw kaas is Bleu de Camembert")
             exit()
